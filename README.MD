@@ -31,3 +31,9 @@ h1{
 ```html
 <script src="../dist/resolution.js"></script>
 ```
+
+
+## resources:
++ http://www.cnblogs.com/pigtail/archive/2013/03/15/2961631.html
++ http://www.cnblogs.com/leinov/p/5209456.html
++ http://3g.163.com/touch/all?nav=2&version=v_standard
