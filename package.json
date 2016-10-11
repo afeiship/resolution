@@ -7,6 +7,10 @@
     "name": "afei",
     "email": "1290657123@qq.com"
   },
+  "scripts": {
+    "test": "gulp test",
+    "build": "gulp"
+  },
   "license": "MIT",
   "devDependencies": {
     "del": "^2.2.1",
