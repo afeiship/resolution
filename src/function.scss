@@ -1,4 +1,4 @@
-$design-width: 750;
+$resolution-design-width: 750;
 @function to-rem( $value ) {
-   @return $value*750/$design-width/20 + rem;
+   @return $value*750/$resolution-design-width/20 + rem;
 }
