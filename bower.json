@@ -1,0 +1,24 @@
+{
+  "name": "resolution",
+  "description": "Check the devicePixelRatio/resolutions for different device.",
+  "main": "dist/resolution.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/resolution",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}
