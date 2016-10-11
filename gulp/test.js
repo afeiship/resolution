@@ -1,7 +1,7 @@
 (function() {
 
   'use strict';
-  
+
   var gulp = require('gulp');
   var config = require('./config');
   var argv = require('yargs').argv;
@@ -9,9 +9,11 @@
     pattern: ['gulp-*', 'gulp.*', 'del']
   });
 
-  //clean
-  gulp.task('clean', function() {
-    return $.del('dist');
+  //test
+  gulp.task('test', function() {
+    return gulp.src('test/*.scss')
+      .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
+      .pipe(gulp.dest('test'));
   });
 
 }());

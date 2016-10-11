@@ -1,0 +1,35 @@
+@import "../dist/resolution-function";
+
+body{
+  font-size: to-rem(20);
+}
+
+.body-text{
+  background: #eee;
+  border: 1px solid #999;
+  width:80%;
+  padding:to-rem(20);
+  margin:to-rem(200) auto;
+}
+.f18{
+  font-size: to-rem(18);
+}
+
+
+.f16{
+  font-size: to-rem(16);
+}
+
+
+.f14{
+  font-size: to-rem(14);
+}
+
+.f12{
+  font-size: to-rem(12);
+}
+
+
+.f10{
+  font-size: to-rem(10);
+}

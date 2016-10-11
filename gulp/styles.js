@@ -1,7 +1,7 @@
 (function() {
 
   'use strict';
-  
+
   var gulp = require('gulp');
   var config = require('./config');
   var argv = require('yargs').argv;
@@ -9,9 +9,11 @@
     pattern: ['gulp-*', 'gulp.*', 'del']
   });
 
-  //clean
-  gulp.task('clean', function() {
-    return $.del('dist');
+  //styles
+  gulp.task('styles', function() {
+    return gulp.src('src/*.scss')
+      .pipe($.rename({ basename: 'resolution-function'}))
+      .pipe(gulp.dest('dist'));
   });
 
 }());

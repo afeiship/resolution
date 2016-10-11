@@ -1,7 +1,7 @@
 (function() {
 
   'use strict';
-  
+
   var gulp = require('gulp');
   var config = require('./config');
   var argv = require('yargs').argv;
@@ -9,9 +9,13 @@
     pattern: ['gulp-*', 'gulp.*', 'del']
   });
 
-  //clean
-  gulp.task('clean', function() {
-    return $.del('dist');
+  //test
+  gulp.task('default',['clean'],function() {
+    gulp.start([
+      'styles',
+      'scripts'
+    ]);
   });
+
 
 }());

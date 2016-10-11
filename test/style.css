@@ -1,0 +1,31 @@
+body {
+  font-size: 1rem;
+}
+
+.body-text {
+  background: #eee;
+  border: 1px solid #999;
+  width: 80%;
+  padding: 1rem;
+  margin: 10rem auto;
+}
+
+.f18 {
+  font-size: 0.9rem;
+}
+
+.f16 {
+  font-size: 0.8rem;
+}
+
+.f14 {
+  font-size: 0.7rem;
+}
+
+.f12 {
+  font-size: 0.6rem;
+}
+
+.f10 {
+  font-size: 0.5rem;
+}

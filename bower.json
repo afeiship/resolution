@@ -1,7 +1,10 @@
 {
   "name": "resolution",
   "description": "Check the devicePixelRatio/resolutions for different device.",
-  "main": "dist/resolution.js",
+  "main": [
+    "dist/resolution.js",
+    "dist/resolution-function.scss"
+  ],
   "authors": [
     "afei"
   ],
