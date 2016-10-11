@@ -14,17 +14,16 @@
   metaEle.content = 'initial-scale=' + scale + ',maximum-scale=' + scale;
   docEle.firstElementChild.appendChild(metaEle);
 
-  var recalCulate = function() {
+  //initial:
+  (function recalCulate() {
     var width = docEle.clientWidth;
     if (width / dpr > 640) {
       width = 640 * dpr;
     }
     docEle.style.fontSize = 20 * (width / 750) + 'px';
-  };
 
-  recalCulate();
-
-  if (!doc.addEventListener) return;
-  win.addEventListener(resizeEvent, recalCulate, false);
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvent, recalCulate, false);
+  }());
 
 })(document, window);
