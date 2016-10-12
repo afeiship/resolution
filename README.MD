@@ -8,7 +8,7 @@ Check the devicePixelRatio/resolutions for different device.
 $resolution-design-width: 375;
 ```
 + use `to-rem` sass function
-```css
+```scss
 @import "../dist/resolution-function";
 
 body{
