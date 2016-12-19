@@ -1,10 +1,10 @@
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(['resolution_amd'], factory);
+    define(['resolution'], factory);
   } else if (typeof exports === 'object') {
-    module.exports = factory(require('resolution_cjs'));
+    module.exports = factory(require('resolution'));
   } else {
-    root.Resolution = factory(root.resolution_glob);
+    root.Resolution = factory(root.resolution);
   }
 }(this, function(resolution) {
 (function(doc, win) {

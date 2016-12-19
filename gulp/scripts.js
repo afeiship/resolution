@@ -17,10 +17,7 @@
           return [
             {
               name: 'resolution',
-              amd: 'resolution_amd',
-              cjs: 'resolution_cjs',
-              global: 'resolution_glob',
-              param: 'resolution'
+              amd: 'resolution',
             }
           ];
         }
@@ -34,9 +31,6 @@
             {
               name: 'resolution',
               amd: 'resolution_amd',
-              cjs: 'resolution_cjs',
-              global: 'resolution_glob',
-              param: 'resolution'
             }
           ];
         }
