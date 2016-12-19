@@ -23,4 +23,10 @@
     win.addEventListener(resizeEvent, recalCulate, false);
   }());
 
+
+  function Resolution(){
+  }
+
+  Resolution.recalCulate=recalCulate;
+
 })(document, window);

@@ -16,7 +16,8 @@
         dependencies: function(file) {
           return [
             {
-              name: 'resolution'
+              name: 'resolution',
+              cjs: 'resolution',
             }
           ];
         }
@@ -28,7 +29,8 @@
         dependencies: function(file) {
           return [
             {
-              name: 'resolution'
+              name: 'resolution',
+              cjs: 'resolution',
             }
           ];
         }
