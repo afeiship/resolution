@@ -1,3 +1,12 @@
+;(function(root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(['resolution_amd'], factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory(require('resolution_cjs'));
+  } else {
+    root.Resolution = factory(root.resolution_glob);
+  }
+}(this, function(resolution) {
 (function(doc, win) {
 
   'use strict';
@@ -24,3 +33,6 @@
   }());
 
 })(document, window);
+
+return Resolution;
+}));

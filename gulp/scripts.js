@@ -12,9 +12,35 @@
   //test
   gulp.task('scripts',function() {
     return gulp.src('src/*.js')
+      .pipe($.umd({
+        dependencies: function(file) {
+          return [
+            {
+              name: 'resolution',
+              amd: 'resolution_amd',
+              cjs: 'resolution_cjs',
+              global: 'resolution_glob',
+              param: 'resolution'
+            }
+          ];
+        }
+      }))
       .pipe(gulp.dest('dist'))
       .pipe($.uglify())
       .pipe($.rename({extname:'.min.js'}))
+      .pipe($.umd({
+        dependencies: function(file) {
+          return [
+            {
+              name: 'resolution',
+              amd: 'resolution_amd',
+              cjs: 'resolution_cjs',
+              global: 'resolution_glob',
+              param: 'resolution'
+            }
+          ];
+        }
+      }))
       .pipe(gulp.dest('dist'));
   });
 
