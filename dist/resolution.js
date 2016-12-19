@@ -1,12 +1,3 @@
-;(function(root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    define(['resolution'], factory);
-  } else if (typeof exports === 'object') {
-    module.exports = factory(require('resolution'));
-  } else {
-    root.Resolution = factory(root.resolution);
-  }
-}(this, function(resolution) {
 (function(doc, win) {
 
   'use strict';
@@ -32,11 +23,4 @@
     win.addEventListener(resizeEvent, recalCulate, false);
   }());
 
-
-  function Resolution(){
-  }
-
 })(document, window);
-
-return Resolution;
-}));

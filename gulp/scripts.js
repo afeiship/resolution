@@ -12,29 +12,9 @@
   //test
   gulp.task('scripts',function() {
     return gulp.src('src/*.js')
-      .pipe($.umd({
-        dependencies: function(file) {
-          return [
-            {
-              name: 'resolution',
-              cjs: 'resolution',
-            }
-          ];
-        }
-      }))
       .pipe(gulp.dest('dist'))
       .pipe($.uglify())
       .pipe($.rename({extname:'.min.js'}))
-      .pipe($.umd({
-        dependencies: function(file) {
-          return [
-            {
-              name: 'resolution',
-              cjs: 'resolution',
-            }
-          ];
-        }
-      }))
       .pipe(gulp.dest('dist'));
   });
 
