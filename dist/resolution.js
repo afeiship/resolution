@@ -36,8 +36,6 @@
   function Resolution(){
   }
 
-  Resolution.recalCulate=recalCulate;
-
 })(document, window);
 
 return Resolution;
