@@ -16,8 +16,7 @@
         dependencies: function(file) {
           return [
             {
-              name: 'resolution',
-              amd: 'resolution',
+              name: 'resolution'
             }
           ];
         }
@@ -29,8 +28,7 @@
         dependencies: function(file) {
           return [
             {
-              name: 'resolution',
-              amd: 'resolution_amd',
+              name: 'resolution'
             }
           ];
         }
