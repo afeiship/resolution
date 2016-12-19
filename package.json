@@ -20,9 +20,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
-    "yargs": "^4.7.1"
-  },
-  "dependencies": {
+    "yargs": "^4.7.1",
     "gulp-umd": "^0.2.0"
   }
 }
