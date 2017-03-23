@@ -1,4 +1,4 @@
-#resolution
+# resolution
 Check the devicePixelRatio/resolutions for different device.
 
 
@@ -31,7 +31,11 @@ h1{
 ```html
 <script src="../dist/resolution.js"></script>
 ```
+OR
 
+```javascript
+import 'resolution';
+```
 
 ## resources:
 + http://www.cnblogs.com/pigtail/archive/2013/03/15/2961631.html
