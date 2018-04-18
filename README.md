@@ -3,11 +3,6 @@ Check the devicePixelRatio/resolutions for different device.
 
 
 ## usage:
-+ design width: 375;
-```scss
-$resolution-design-width: 375;
-```
-+ use `to-rem` sass function
 ```scss
 @import "../dist/resolution-function";
 
@@ -28,11 +23,6 @@ h1{
 ```
 
 + import scripts:
-```html
-<script src="../dist/resolution.js"></script>
-```
-OR
-
 ```javascript
 import 'resolution';
 ```
