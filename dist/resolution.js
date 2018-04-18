@@ -6,6 +6,7 @@
     dpr = Math.min(win.devicePixelRatio, 3),
     scale = 1 / dpr,
     resizeEvent = 'orientationchange' in win ? 'orientationchange' : 'resize';
+  var PX = 'px';
 
   dpr = win.top === win.self ? dpr : 1;
   docEle.dataset.dpr = dpr;
@@ -18,7 +19,7 @@
     }
     docEle.dataset.width = width;
     docEle.dataset.percent = 100 * (width / 750);
-    docEle.style.fontSize = 100 * (width / 750) + 'px';
+    docEle.style.fontSize = 100 * (width / 750) + px;
     if (!doc.addEventListener) return;
     win.addEventListener(resizeEvent, recalCulate, false);
   }());

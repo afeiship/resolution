@@ -1,4 +1,9 @@
-$resolution-design-width: 375;
+/*
+ 750px 宽度的设计稿
+ 100px 等价于 1rem
+*/
+
+$resolution-design-width: 750;
 @function to-rem( $value ) {
-   @return $value*375/$resolution-design-width/50 + rem;
+   @return $value*750/$resolution-design-width/100 + rem;
 }
