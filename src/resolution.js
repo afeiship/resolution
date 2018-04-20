@@ -19,7 +19,7 @@
     }
     docEle.dataset.width = width;
     docEle.dataset.percent = 100 * (width / 750);
-    docEle.style.fontSize = 100 * (width / 750) + px;
+    docEle.style.fontSize = 100 * (width / 750) + PX;
     if (!doc.addEventListener) return;
     win.addEventListener(resizeEvent, recalCulate, false);
   }());
