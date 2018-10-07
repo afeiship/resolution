@@ -3,7 +3,8 @@
  100px 等价于 1rem
 */
 
-$resolution-design-width: 750;
+$resolution-design-width: 750!default;
+
 @function to-rem( $value ) {
-   @return $value*750/$resolution-design-width/100 + rem;
+  @return $value*750/$resolution-design-width/100 + rem;
 }

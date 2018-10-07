@@ -1,6 +1,6 @@
 {
   "name": "resolution",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Check the devicePixelRatio/resolutions for different device.",
   "homepage": "https://github.com/afeiship/resolution",
   "author": {
