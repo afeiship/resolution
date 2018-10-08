@@ -4,7 +4,7 @@ Check the devicePixelRatio/resolutions for different device.
 
 ## usage:
 ```scss
-@import "../dist/resolution-function";
+@import "node_modules/dist/resolution-function";
 
 body{
   font-size: to-rem(20);
