@@ -1,5 +1,4 @@
 (function(doc, win) {
-
   'use strict';
 
   var docEle = doc.documentElement,
@@ -17,11 +16,12 @@
     if (width / dpr > 750) {
       width = 750 * dpr;
     }
+    docEle.dataset.scale = scale;
     docEle.dataset.width = width;
     docEle.dataset.percent = 100 * (width / 750);
     docEle.style.fontSize = 100 * (width / 750) + PX;
     if (!doc.addEventListener) return;
     win.addEventListener(resizeEvent, recalCulate, false);
-  }());
+  })();
 
 })(document, window);
